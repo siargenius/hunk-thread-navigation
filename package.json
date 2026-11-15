@@ -1,0 +1,25 @@
+{
+  "name": "hunk-thread-navigation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Navigate Hunk review threads by their annotated source lines",
+  "hunk": {
+    "apiVersion": 27,
+    "extensions": [
+      "./hunk-thread-navigation.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "test:integration": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@xterm/headless": "6.0.0",
+    "hunkdiff": "0.24.1",
+    "node-pty": "1.1.0",
+    "typescript": "*"
+  }
+}
