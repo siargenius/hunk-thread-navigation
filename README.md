@@ -17,7 +17,20 @@ Notes without a source range, or whose ranges do not overlap visible hunks, have
 Sidecar annotations and saved user and agent notes are supported.
 Reloads and file filters update the target list. Manual source-line movement updates the next starting point.
 
-## Local installation
+## Install from the private repository
+
+Authenticate Git on the machine where you want to install the extension:
+
+```sh
+gh auth login
+gh auth setup-git
+hunk extension install siargenius/hunk-thread-navigation
+```
+
+The repository is private and is not submitted to Hunk's extension directory.
+Hunk loads the managed installation automatically. Configure the brace bindings below, then restart Hunk.
+
+## Load a local checkout
 
 Add this entry to the existing paths list in `~/.config/hunk/config.toml`:
 
